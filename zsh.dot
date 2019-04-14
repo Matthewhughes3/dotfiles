@@ -1,6 +1,7 @@
-EDITOR=vi
-PATH=$PATH:~/bin
+export EDITOR=vi
+export PATH=$PATH:~/bin
 bindkey -v
+export KEYTIMEOUT=1
 
 function zle-line-init zle-keymap-select {
     RPS1="${${KEYMAP/vicmd/-- NORMAL --}/(main|viins)/-- INSERT --}"
@@ -21,6 +22,11 @@ prompt adam2
 zstyle ':completion:*' menu select
 zstyle ':completion::complete:*' gain-privileges 1
 
-alias ga="git add *"
+alias ga="git add -u; git commit; git push"
+alias gs="git status"
+alias re="source ~/dotfiles/zsh.dot"
+alias dotz="vim ~/dotfiles/zsh.dot"
+alias dotv="vim ~/dotfiles/vim.dot"
+alias doti="vim ~/dotfiles/i3.dot"
 
 setopt COMPLETE_ALIASES
