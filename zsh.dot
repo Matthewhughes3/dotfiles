@@ -22,11 +22,12 @@ prompt adam2
 zstyle ':completion:*' menu select
 zstyle ':completion::complete:*' gain-privileges 1
 
-alias ga="git add -u; git commit; git push"
+alias ga="git commit -a; git push"
 alias gs="git status"
 alias re="source ~/dotfiles/zsh.dot"
 alias dotz="vim ~/dotfiles/zsh.dot"
 alias dotv="vim ~/dotfiles/vim.dot"
 alias doti="vim ~/dotfiles/i3.dot"
+alias dott="vim ~/dotfiles/tmux.dot"
 
 setopt COMPLETE_ALIASES
