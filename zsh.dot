@@ -17,7 +17,7 @@ zstyle ':completion::complete:*' gain-privileges 1
 
 alias ga="git commit -a; git push"
 alias gs="git status"
-alias re="source ~/dotfiles/zsh.dot"
+alias re="source ~/.zshrc"
 alias dotz="vim ~/dotfiles/zsh.dot"
 alias dotv="vim ~/dotfiles/vim.dot"
 alias doti="vim ~/dotfiles/i3.dot"
