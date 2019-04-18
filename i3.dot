@@ -167,9 +167,13 @@ bindsym $mod+shift+x exec i3lock
 bindsym $mod+c exec google-chrome-stable
 bindsym $mod+i exec google-chrome-stable --incognito
 bindsym $mod+g exec galculator
-bindsym $mod+minus exec pulseaudio-ctl down
-bindsym $mod+plus exec pulseaudio-ctl up
-bindsym $mod+semicolon exec "/usr/bin/amixer -q -D pulse sset Master mute; /usr/bin/killall -q -STOP 'pulseaudio'"
-bindsym $mod+apostrophe exec "/usr/bin/killall -q -CONT 'pulseaudio'; /usr/bin/amixer -q -D pulse sset Master unmute"
+bindsym $mod+minus exec amixer set Master 5%-
+bindsym $mod+Shift+minus exec amixer set Master 10%-
+bindsym $mod+plus exec amixer set Master 5%+
+bindsym $mod+Shift+plus exec amixer set Master 10%+
+bindsym $mod+o exec xrandr --output HDMI1 --off --output LVDS1 --primary --mode 1366x768 --pos 0x0 --rotate normal --output VIRTUAL1 --off --output DP1 --off --output VGA1 --off
+bindsym $mod+t exec xrandr --output HDMI1 --primary --mode 1920x1080 --pos 0x0 --rotate normal --output LVDS1 --off --output VIRTUAL1 --off --output DP1 --off --output VGA1 --right-of HDMI1 --mode 1920x1080 --pos 1920x0 --rotate normal
 
-exec_always xrandr --output HDMI1 --mode 1920x1080 --pos 0x0 --rotate normal --output LVDS1 --off --output VIRTUAL1 --off --output DP1 --off --output VGA1 --mode 1920x1080 --pos 1920x0 --rotate normal
+
+
+exec xrandr --output HDMI1 --mode 1920x1080 --pos 0x0 --rotate normal --output LVDS1 --off --output VIRTUAL1 --off --output DP1 --off --output VGA1 --mode 1920x1080 --pos 1920x0 --rotate normal
