@@ -11,6 +11,7 @@ Plugin 'posva/vim-vue'
 Plugin 'scrooloose/nerdtree'
 Plugin 'wincent/scalpel'
 Plugin 'vim-airline/vim-airline'
+Plugin 'edkolev/tmuxline.vim'
 
 call vundle#end()
 filetype plugin indent on
@@ -56,3 +57,5 @@ set splitright
 let g:airline#extensions#tabline#enabled = 1
 
 let g:airline#extensions#tabline#fnamemod = ':t'
+
+let g:tmuxline_powerline_separators = 0
