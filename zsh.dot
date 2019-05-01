@@ -9,8 +9,11 @@ zstyle ':completion::complete:*' gain-privileges 1
 autoload -U compinit
 compinit
 
-alias ga="git commit -a; git push"
 alias gs="git status"
+alias l="ls"
+alias t="tmux"
+alias tt="tmuxp"
+alias ta="tmux a -t $1"
 alias re="source ~/.zshrc"
 alias dotz="vim ~/dotfiles/zsh.dot"
 alias dotv="vim ~/dotfiles/vim.dot"

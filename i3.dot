@@ -67,7 +67,8 @@ bindsym $mod+Shift+Right move right
 bindsym $mod+v split v
 
 # enter fullscreen mode for the focused container
-bindsym $mod+f fullscreen toggle
+#bindsym $mod+f fullscreen toggle
+bindsym $mod+f exec firefox
 
 # change container layout (stacked, tabbed, toggle split)
 bindsym $mod+s layout stacking
@@ -177,3 +178,4 @@ bindsym $mod+t exec xrandr --output HDMI1 --primary --mode 1920x1080 --pos 0x0 -
 
 
 exec xrandr --output HDMI1 --mode 1920x1080 --pos 0x0 --rotate normal --output LVDS1 --off --output VIRTUAL1 --off --output DP1 --off --output VGA1 --mode 1920x1080 --pos 1920x0 --rotate normal
+exec-always nm-applet
