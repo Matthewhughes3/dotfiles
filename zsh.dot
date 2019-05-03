@@ -6,6 +6,17 @@ export KEYTIMEOUT=1
 zstyle ':completion:*' menu select
 zstyle ':completion::complete:*' gain-privileges 1
 
+magic-enter () {
+        if [[ -z $BUFFER ]]
+        then
+                zle clear-screen
+        else
+                zle accept-line
+        fi
+}
+
+zle -N magic-enter
+
 autoload -U compinit
 compinit
 
@@ -15,6 +26,7 @@ alias t="tmux"
 alias tt="tmuxp"
 alias ta="tmux a -t $1"
 alias re="source ~/.zshrc"
+bindkey "^M" magic-enter
 alias dotz="vim ~/dotfiles/zsh.dot"
 alias dotv="vim ~/dotfiles/vim.dot"
 alias doti="vim ~/dotfiles/i3.dot"
