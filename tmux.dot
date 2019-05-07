@@ -9,9 +9,12 @@ bind -n C-j run "(tmux display-message -p '#{pane_current_command}' | grep -iq v
 bind -n C-k run "(tmux display-message -p '#{pane_current_command}' | grep -iq vim && tmux send-keys C-k) || tmux select-pane -U"
 bind -n C-l run "(tmux display-message -p '#{pane_current_command}' | grep -iq vim && tmux send-keys C-l) || tmux select-pane -R"
 
-bind j "select-pane down"
-bind k "select-pane up"
-bind l "select-pane right"
-bind h "select-pane left"
+bind -n C-p run "tmux next-window"
+bind -n C-o run "tmux previous-window"
+
+bind j select-pane -D
+bind k select-pane -U
+bind l select-pane -R
+bind h select-pane -L
 
 set -g default-terminal "screen-256color"

@@ -1,7 +1,7 @@
 export EDITOR=vi
 export PATH=$PATH:~/bin
 bindkey -v
-export KEYTIMEOUT=1
+#export KEYTIMEOUT=1
 
 zstyle ':completion:*' menu select
 zstyle ':completion::complete:*' gain-privileges 1
@@ -21,11 +21,14 @@ autoload -U compinit
 compinit
 
 alias gs="git status"
+alias c="cd"
 alias l="ls"
 alias t="tmux"
-alias tt="tmuxp"
+alias tt="tmuxp load"
 alias ta="tmux a -t $1"
 alias re="source ~/.zshrc"
+alias m="meteor"
+alias mm="meteor mongo"
 bindkey "^M" magic-enter
 alias dotz="vim ~/dotfiles/zsh.dot"
 alias dotv="vim ~/dotfiles/vim.dot"
