@@ -7,11 +7,12 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-surround'
-Plugin 'posva/vim-vue'
+Plugin 'sheerun/vim-polyglot'
 Plugin 'scrooloose/nerdtree'
 Plugin 'wincent/scalpel'
 Plugin 'vim-airline/vim-airline'
 Plugin 'edkolev/tmuxline.vim'
+Plugin 'burner/vim-svelte'
 
 call vundle#end()
 filetype plugin indent on
@@ -24,7 +25,6 @@ imap jj <ESC>
 set nu rnu
 set tabstop=4
 set shiftwidth=4
-set smartindent
 noremap p "+p
 noremap y "+y
 noremap d "+d

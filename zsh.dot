@@ -23,8 +23,8 @@ compinit
 alias gs="git status"
 alias c="cd"
 alias l="ls"
-alias t="tmux"
 alias tt="tmuxp load"
+alias t="tmux"
 alias ta="tmux a -t $1"
 alias re="source ~/.zshrc"
 alias m="meteor"
@@ -34,6 +34,10 @@ alias dotz="vim ~/dotfiles/zsh.dot"
 alias dotv="vim ~/dotfiles/vim.dot"
 alias doti="vim ~/dotfiles/i3.dot"
 alias dott="vim ~/dotfiles/tmux.dot"
+alias d="ranger ."
+alias twj="cd ~/projects/Thrive-With-Jive; tt ."
+alias text="cd ~/projects/Thrive-Extensions/chrome/add_leads; tt ."
+alias mkos="cd ~/projects/MKOS; tt ."
 
 setopt COMPLETE_ALIASES
 
