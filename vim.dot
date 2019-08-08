@@ -25,11 +25,6 @@ imap jj <ESC>
 set nu rnu
 set tabstop=4
 set shiftwidth=4
-noremap p "+p
-noremap y "+y
-noremap d "+d
-noremap yy "+yy
-noremap dd "+dd
 inoremap ' ''<Left>
 inoremap " ""<Left>
 inoremap ( ()<Left>
