@@ -13,6 +13,7 @@ Plugin 'wincent/scalpel'
 Plugin 'vim-airline/vim-airline'
 Plugin 'edkolev/tmuxline.vim'
 Plugin 'burner/vim-svelte'
+Plugin 'prettier/vim-prettier'
 
 call vundle#end()
 filetype plugin indent on
@@ -23,8 +24,8 @@ let mapleader = " "
 
 imap jj <ESC>
 set nu rnu
-set tabstop=4
-set shiftwidth=4
+set tabstop=2
+set shiftwidth=2
 inoremap ' ''<Left>
 inoremap " ""<Left>
 inoremap ( ()<Left>
@@ -42,12 +43,12 @@ nmap <leader>l :bnext<CR>
 nmap <leader>h :bprevious<CR>
 nmap <leader>bq :bp<BAR>bd#<CR>
 nmap <leader>bl :ls<CR>
+nmap <leader>s :syntax sync fromstart<CR>
 
 map <C-n> :NERDTreeToggle<CR>
 
 set splitbelow
 set splitright
-
 
 let g:airline#extensions#tabline#enabled = 1
 
