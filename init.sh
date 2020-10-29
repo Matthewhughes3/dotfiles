@@ -6,3 +6,5 @@ git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 vim +PluginInstall
 cp ~/dotfiles/i3.dot ~/.i3/config
 cp ~/dotfiles/xmodmap.dot ~/.Xmodmap
+cp ~/dotfiles/screenlayout ~/.screenlayout
+cp ~/dotfiles/vim_templates ~/.vim/templates
