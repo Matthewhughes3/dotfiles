@@ -38,6 +38,17 @@ nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 nnoremap <C-T> :ter<CR>
 
+nnoremap y "+y
+nnoremap p "+p
+nnoremap P "+P
+nnoremap d "+d
+nnoremap D "+D
+vnoremap y "+y
+vnoremap p "+p
+vnoremap d "+d
+nnoremap yy "+yy
+nnoremap dd "+dd
+
 nmap <leader>T :enew<CR>
 nmap <leader>l :bnext<CR>
 nmap <leader>h :bprevious<CR>
