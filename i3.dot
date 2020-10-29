@@ -172,8 +172,8 @@ bindsym $mod+minus exec amixer set Master 5%-
 bindsym $mod+Shift+minus exec amixer set Master 10%-
 bindsym $mod+plus exec amixer set Master 5%+
 bindsym $mod+Shift+plus exec amixer set Master 10%+
-
-
+bindsym $mod+t exec teams
+bindsym $mod+Shift+d exec ~/.screenlayout/dock.sh
+bindsym $mod+Shift+m exec ~/.screenlayout/laptop.sh
 
 exec --no-startup-id nm-applet
-exec xrandr --output HDMI1 --mode 1920x1080 --pos 0x0 --rotate normal --output LVDS1 --off --output VIRTUAL1 --off --output DP1 --off --output VGA1 --mode 1920x1080 --pos 1920x0 --rotate normal
